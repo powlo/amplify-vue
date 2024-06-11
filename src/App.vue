@@ -10,6 +10,7 @@ import '@aws-amplify/ui-vue/styles.css'
   <authenticator>
     <template v-slot="{ user, signOut }">
       <main>
+        <h1>{{ user?.signInDetails?.loginId }}'s Todos</h1>
         <Todos />
         <button @click="signOut">Sign Out</button>
       </main>
